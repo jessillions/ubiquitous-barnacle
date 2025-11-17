@@ -1,0 +1,111 @@
+description: null
+archived: false
+collection_position: null
+source_card_id: WDS7D9NvNQNJqyb8OI1_n
+table_id:
+- spongebob
+- public
+- best_songs_on_spotify_from_2000_2023_20251117024000
+result_metadata:
+- database_type: int8
+  semantic_type: null
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: year
+  lib/original-name: year
+  lib/breakout?: true
+  name: year
+  lib/card-id: 541
+  lib/source: source/previous-stage
+  lib/source-column-alias: year
+  lib/original-display-name: Year
+  lib/model-display-name: Year
+  source: breakout
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - year
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - year
+  lib/desired-column-alias: year
+  position: 4
+  visibility_type: normal
+  display_name: Year
+  base_type: type/BigInteger
+- database_type: numeric
+  semantic_type: type/Duration
+  lib/deduplicated-name: avg
+  lib/original-name: avg
+  name: avg
+  lib/source: source/aggregations
+  lib/source-column-alias: avg
+  source: aggregation
+  field_ref:
+  - aggregation
+  - 0
+  effective_type: type/Decimal
+  lib/desired-column-alias: avg
+  display_name: Average of Duration
+  base_type: type/Decimal
+card_schema: 22
+database_id: spongebob
+enable_embedding: false
+collection_id: qOtWw57vs9jNj7-yaj--j
+query_type: query
+name: Average song duration over time
+document_id: null
+type: question
+creator_id: jess+growthinstance@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: spongebob
+  type: query
+  query:
+    breakout:
+    - - field
+      - year
+      - base-type: type/BigInteger
+    order-by:
+    - - asc
+      - - field
+        - year
+        - base-type: type/BigInteger
+    aggregation:
+    - - avg
+      - - field
+        - duration
+        - base-type: type/BigInteger
+    source-table: WDS7D9NvNQNJqyb8OI1_n
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: oZI3nLd8Ce2fiatx3F_bH
+  label: average_song_duration_over_time
+display: line
+archived_directly: false
+entity_id: oZI3nLd8Ce2fiatx3F_bH
+collection_preview: null
+visualization_settings:
+  graph.x_axis.scale: linear
+  graph.dimensions:
+  - year
+  graph.metrics:
+  - avg
+  column_settings: null
+metabase_version: v1.57.2 (cef18f9)
+parameters: []
+dashboard_id: null
+created_at: '2025-11-17T02:45:10.302313Z'
+public_uuid: null

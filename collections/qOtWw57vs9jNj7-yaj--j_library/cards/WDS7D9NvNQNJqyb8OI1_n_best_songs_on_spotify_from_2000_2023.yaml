@@ -1,0 +1,527 @@
+description: null
+archived: false
+collection_position: null
+source_card_id: null
+table_id:
+- spongebob
+- public
+- best_songs_on_spotify_from_2000_2023_20251117024000
+result_metadata:
+- database_type: int8
+  semantic_type: type/PK
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: _mb_row_id
+  lib/original-name: _mb_row_id
+  name: _mb_row_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: _mb_row_id
+  lib/original-display-name: _mb_row_id
+  source: fields
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - _mb_row_id
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - _mb_row_id
+  lib/desired-column-alias: _mb_row_id
+  position: 0
+  visibility_type: normal
+  display_name: _mb_row_id
+  base_type: type/BigInteger
+- database_type: varchar
+  semantic_type: type/Title
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: title
+  lib/original-name: title
+  name: title
+  lib/source: source/table-defaults
+  lib/source-column-alias: title
+  lib/original-display-name: Title
+  source: fields
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - title
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - title
+  lib/desired-column-alias: title
+  position: 1
+  visibility_type: normal
+  display_name: Title
+  base_type: type/Text
+- database_type: varchar
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: artist
+  lib/original-name: artist
+  name: artist
+  lib/source: source/table-defaults
+  lib/source-column-alias: artist
+  lib/original-display-name: Artist
+  source: fields
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - artist
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - artist
+  lib/desired-column-alias: artist
+  position: 2
+  visibility_type: normal
+  display_name: Artist
+  base_type: type/Text
+- database_type: varchar
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: top_genre
+  lib/original-name: top_genre
+  name: top_genre
+  lib/source: source/table-defaults
+  lib/source-column-alias: top_genre
+  lib/original-display-name: Top Genre
+  source: fields
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - top_genre
+  - null
+  effective_type: type/Text
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - top_genre
+  lib/desired-column-alias: top_genre
+  position: 3
+  visibility_type: normal
+  display_name: Top Genre
+  base_type: type/Text
+- database_type: int8
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: year
+  lib/original-name: year
+  name: year
+  lib/source: source/table-defaults
+  lib/source-column-alias: year
+  lib/original-display-name: Year
+  source: fields
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - year
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - year
+  lib/desired-column-alias: year
+  position: 4
+  visibility_type: normal
+  display_name: Year
+  base_type: type/BigInteger
+- database_type: int8
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: bpm
+  lib/original-name: bpm
+  name: bpm
+  lib/source: source/table-defaults
+  lib/source-column-alias: bpm
+  lib/original-display-name: Bpm
+  source: fields
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - bpm
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - bpm
+  lib/desired-column-alias: bpm
+  position: 5
+  visibility_type: normal
+  display_name: Bpm
+  base_type: type/BigInteger
+- database_type: int8
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: energy
+  lib/original-name: energy
+  name: energy
+  lib/source: source/table-defaults
+  lib/source-column-alias: energy
+  lib/original-display-name: Energy
+  source: fields
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - energy
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - energy
+  lib/desired-column-alias: energy
+  position: 6
+  visibility_type: normal
+  display_name: Energy
+  base_type: type/BigInteger
+- database_type: int8
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: danceability
+  lib/original-name: danceability
+  name: danceability
+  lib/source: source/table-defaults
+  lib/source-column-alias: danceability
+  lib/original-display-name: Danceability
+  source: fields
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - danceability
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - danceability
+  lib/desired-column-alias: danceability
+  position: 7
+  visibility_type: normal
+  display_name: Danceability
+  base_type: type/BigInteger
+- database_type: int8
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: db
+  lib/original-name: db
+  name: db
+  lib/source: source/table-defaults
+  lib/source-column-alias: db
+  lib/original-display-name: DB
+  source: fields
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - db
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - db
+  lib/desired-column-alias: db
+  position: 8
+  visibility_type: normal
+  display_name: DB
+  base_type: type/BigInteger
+- database_type: int8
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: liveness
+  lib/original-name: liveness
+  name: liveness
+  lib/source: source/table-defaults
+  lib/source-column-alias: liveness
+  lib/original-display-name: Liveness
+  source: fields
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - liveness
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - liveness
+  lib/desired-column-alias: liveness
+  position: 9
+  visibility_type: normal
+  display_name: Liveness
+  base_type: type/BigInteger
+- database_type: int8
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: valence
+  lib/original-name: valence
+  name: valence
+  lib/source: source/table-defaults
+  lib/source-column-alias: valence
+  lib/original-display-name: Valence
+  source: fields
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - valence
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - valence
+  lib/desired-column-alias: valence
+  position: 10
+  visibility_type: normal
+  display_name: Valence
+  base_type: type/BigInteger
+- database_type: int8
+  semantic_type: type/Duration
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: duration
+  lib/original-name: duration
+  name: duration
+  lib/source: source/table-defaults
+  lib/source-column-alias: duration
+  lib/original-display-name: Duration
+  source: fields
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - duration
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - duration
+  lib/desired-column-alias: duration
+  position: 11
+  visibility_type: normal
+  display_name: Duration
+  base_type: type/BigInteger
+- database_type: int8
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: acousticness
+  lib/original-name: acousticness
+  name: acousticness
+  lib/source: source/table-defaults
+  lib/source-column-alias: acousticness
+  lib/original-display-name: Acousticness
+  source: fields
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - acousticness
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - acousticness
+  lib/desired-column-alias: acousticness
+  position: 12
+  visibility_type: normal
+  display_name: Acousticness
+  base_type: type/BigInteger
+- database_type: int8
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: speechiness
+  lib/original-name: speechiness
+  name: speechiness
+  lib/source: source/table-defaults
+  lib/source-column-alias: speechiness
+  lib/original-display-name: Speechiness
+  source: fields
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - speechiness
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - speechiness
+  lib/desired-column-alias: speechiness
+  position: 13
+  visibility_type: normal
+  display_name: Speechiness
+  base_type: type/BigInteger
+- database_type: int8
+  table_id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  qp/implicit-field?: true
+  lib/deduplicated-name: popularity
+  lib/original-name: popularity
+  name: popularity
+  lib/source: source/table-defaults
+  lib/source-column-alias: popularity
+  lib/original-display-name: Popularity
+  source: fields
+  field_ref:
+  - field
+  - - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - popularity
+  - null
+  effective_type: type/BigInteger
+  active: true
+  id:
+  - spongebob
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - popularity
+  lib/desired-column-alias: popularity
+  position: 14
+  visibility_type: normal
+  display_name: Popularity
+  base_type: type/BigInteger
+card_schema: 22
+database_id: spongebob
+enable_embedding: false
+collection_id: qOtWw57vs9jNj7-yaj--j
+query_type: query
+name: Best Songs On Spotify From 2000 2023
+document_id: null
+type: model
+creator_id: jess+growthinstance@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: spongebob
+  type: query
+  query:
+    source-table:
+    - spongebob
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: WDS7D9NvNQNJqyb8OI1_n
+  label: best_songs_on_spotify_from_2000_2023
+display: table
+archived_directly: false
+entity_id: WDS7D9NvNQNJqyb8OI1_n
+collection_preview: null
+visualization_settings:
+  column_settings: null
+metabase_version: v1.57.2 (cef18f9)
+parameters: []
+dashboard_id: null
+created_at: '2025-11-17T02:40:05.338606Z'
+public_uuid: null
