@@ -1,0 +1,528 @@
+name: Best Songs On Spotify From 2000 2023
+description: null
+entity_id: WDS7D9NvNQNJqyb8OI1_n
+created_at: '2025-11-17T02:40:05.338606Z'
+creator_id: jess+growthinstance@metabase.com
+display: table
+archived: false
+collection_id: mFHO3GyOtrJ68ukg8a4VN
+collection_preview: null
+collection_position: null
+query_type: query
+database_id: Acme Postgres
+table_id:
+- Acme Postgres
+- public
+- best_songs_on_spotify_from_2000_2023_20251117024000
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Acme Postgres
+  query:
+    source-table:
+    - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+  type: query
+result_metadata:
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: _mb_row_id
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - _mb_row_id
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - _mb_row_id
+  name: _mb_row_id
+  position: 0
+  semantic_type: type/PK
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  visibility_type: normal
+  lib/deduplicated-name: _mb_row_id
+  lib/desired-column-alias: _mb_row_id
+  lib/original-display-name: _mb_row_id
+  lib/original-name: _mb_row_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: _mb_row_id
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Title
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - title
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - title
+  name: title
+  position: 1
+  semantic_type: type/Title
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  visibility_type: normal
+  lib/deduplicated-name: title
+  lib/desired-column-alias: title
+  lib/original-display-name: Title
+  lib/original-name: title
+  lib/source: source/table-defaults
+  lib/source-column-alias: title
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Artist
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - artist
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - artist
+  name: artist
+  position: 2
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  visibility_type: normal
+  lib/deduplicated-name: artist
+  lib/desired-column-alias: artist
+  lib/original-display-name: Artist
+  lib/original-name: artist
+  lib/source: source/table-defaults
+  lib/source-column-alias: artist
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Top Genre
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - top_genre
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - top_genre
+  name: top_genre
+  position: 3
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  visibility_type: normal
+  lib/deduplicated-name: top_genre
+  lib/desired-column-alias: top_genre
+  lib/original-display-name: Top Genre
+  lib/original-name: top_genre
+  lib/source: source/table-defaults
+  lib/source-column-alias: top_genre
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Year
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - year
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - year
+  name: year
+  position: 4
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  visibility_type: normal
+  lib/deduplicated-name: year
+  lib/desired-column-alias: year
+  lib/original-display-name: Year
+  lib/original-name: year
+  lib/source: source/table-defaults
+  lib/source-column-alias: year
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Bpm
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - bpm
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - bpm
+  name: bpm
+  position: 5
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  visibility_type: normal
+  lib/deduplicated-name: bpm
+  lib/desired-column-alias: bpm
+  lib/original-display-name: Bpm
+  lib/original-name: bpm
+  lib/source: source/table-defaults
+  lib/source-column-alias: bpm
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Energy
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - energy
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - energy
+  name: energy
+  position: 6
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  visibility_type: normal
+  lib/deduplicated-name: energy
+  lib/desired-column-alias: energy
+  lib/original-display-name: Energy
+  lib/original-name: energy
+  lib/source: source/table-defaults
+  lib/source-column-alias: energy
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Danceability
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - danceability
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - danceability
+  name: danceability
+  position: 7
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  visibility_type: normal
+  lib/deduplicated-name: danceability
+  lib/desired-column-alias: danceability
+  lib/original-display-name: Danceability
+  lib/original-name: danceability
+  lib/source: source/table-defaults
+  lib/source-column-alias: danceability
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: DB
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - db
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - db
+  name: db
+  position: 8
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  visibility_type: normal
+  lib/deduplicated-name: db
+  lib/desired-column-alias: db
+  lib/original-display-name: DB
+  lib/original-name: db
+  lib/source: source/table-defaults
+  lib/source-column-alias: db
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Liveness
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - liveness
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - liveness
+  name: liveness
+  position: 9
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  visibility_type: normal
+  lib/deduplicated-name: liveness
+  lib/desired-column-alias: liveness
+  lib/original-display-name: Liveness
+  lib/original-name: liveness
+  lib/source: source/table-defaults
+  lib/source-column-alias: liveness
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Valence
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - valence
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - valence
+  name: valence
+  position: 10
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  visibility_type: normal
+  lib/deduplicated-name: valence
+  lib/desired-column-alias: valence
+  lib/original-display-name: Valence
+  lib/original-name: valence
+  lib/source: source/table-defaults
+  lib/source-column-alias: valence
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Duration
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - duration
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - duration
+  name: duration
+  position: 11
+  semantic_type: type/Duration
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  visibility_type: normal
+  lib/deduplicated-name: duration
+  lib/desired-column-alias: duration
+  lib/original-display-name: Duration
+  lib/original-name: duration
+  lib/source: source/table-defaults
+  lib/source-column-alias: duration
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Acousticness
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - acousticness
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - acousticness
+  name: acousticness
+  position: 12
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  visibility_type: normal
+  lib/deduplicated-name: acousticness
+  lib/desired-column-alias: acousticness
+  lib/original-display-name: Acousticness
+  lib/original-name: acousticness
+  lib/source: source/table-defaults
+  lib/source-column-alias: acousticness
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Speechiness
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - speechiness
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - speechiness
+  name: speechiness
+  position: 13
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  visibility_type: normal
+  lib/deduplicated-name: speechiness
+  lib/desired-column-alias: speechiness
+  lib/original-display-name: Speechiness
+  lib/original-name: speechiness
+  lib/source: source/table-defaults
+  lib/source-column-alias: speechiness
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Popularity
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_songs_on_spotify_from_2000_2023_20251117024000
+    - popularity
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  - popularity
+  name: popularity
+  position: 14
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_songs_on_spotify_from_2000_2023_20251117024000
+  visibility_type: normal
+  lib/deduplicated-name: popularity
+  lib/desired-column-alias: popularity
+  lib/original-display-name: Popularity
+  lib/original-name: popularity
+  lib/source: source/table-defaults
+  lib/source-column-alias: popularity
+  qp/implicit-field?: true
+visualization_settings:
+  column_settings: null
+card_schema: 23
+serdes/meta:
+- id: WDS7D9NvNQNJqyb8OI1_n
+  label: best_songs_on_spotify_from_2000_2023
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: v1.57.2 (cef18f9)
+source_card_id: null
+type: model
