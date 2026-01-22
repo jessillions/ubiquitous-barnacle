@@ -1,0 +1,792 @@
+name: B2b Saas Dataset
+description: null
+entity_id: XEt92-fl9oyhngWKOd6yV
+created_at: '2026-01-22T03:20:57.296498Z'
+creator_id: jess+growthinstance@metabase.com
+display: table
+archived: false
+collection_id: mFHO3GyOtrJ68ukg8a4VN
+collection_preview: null
+collection_position: null
+query_type: query
+database_id: Acme Postgres
+table_id:
+- Acme Postgres
+- public
+- b2b_saas_dataset_20260122032052
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Acme Postgres
+  query:
+    source-table:
+    - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+  type: query
+result_metadata:
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: _mb_row_id
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - _mb_row_id
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - _mb_row_id
+  name: _mb_row_id
+  position: 0
+  semantic_type: type/PK
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: _mb_row_id
+  lib/desired-column-alias: _mb_row_id
+  lib/original-display-name: _mb_row_id
+  lib/original-name: _mb_row_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: _mb_row_id
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Event ID
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - event_id
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - event_id
+  name: event_id
+  position: 1
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: event_id
+  lib/desired-column-alias: event_id
+  lib/original-display-name: Event ID
+  lib/original-name: event_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: event_id
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Event Type
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - event_type
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - event_type
+  name: event_type
+  position: 2
+  semantic_type: type/Category
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: event_type
+  lib/desired-column-alias: event_type
+  lib/original-display-name: Event Type
+  lib/original-name: event_type
+  lib/source: source/table-defaults
+  lib/source-column-alias: event_type
+  qp/implicit-field?: true
+- active: true
+  base_type: type/DateTimeWithLocalTZ
+  database_type: timestamptz
+  display_name: Event Timestamp
+  effective_type: type/DateTimeWithLocalTZ
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - event_timestamp
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - event_timestamp
+  name: event_timestamp
+  position: 3
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: event_timestamp
+  lib/desired-column-alias: event_timestamp
+  lib/original-display-name: Event Timestamp
+  lib/original-name: event_timestamp
+  lib/source: source/table-defaults
+  lib/source-column-alias: event_timestamp
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: User ID
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - user_id
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - user_id
+  name: user_id
+  position: 4
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: user_id
+  lib/desired-column-alias: user_id
+  lib/original-display-name: User ID
+  lib/original-name: user_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: user_id
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Company ID
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - company_id
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - company_id
+  name: company_id
+  position: 5
+  semantic_type: type/Company
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: company_id
+  lib/desired-column-alias: company_id
+  lib/original-display-name: Company ID
+  lib/original-name: company_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: company_id
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: User Name
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - user_name
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - user_name
+  name: user_name
+  position: 6
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: user_name
+  lib/desired-column-alias: user_name
+  lib/original-display-name: User Name
+  lib/original-name: user_name
+  lib/source: source/table-defaults
+  lib/source-column-alias: user_name
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: User Email
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - user_email
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - user_email
+  name: user_email
+  position: 7
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: user_email
+  lib/desired-column-alias: user_email
+  lib/original-display-name: User Email
+  lib/original-name: user_email
+  lib/source: source/table-defaults
+  lib/source-column-alias: user_email
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: User Role
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - user_role
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - user_role
+  name: user_role
+  position: 8
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: user_role
+  lib/desired-column-alias: user_role
+  lib/original-display-name: User Role
+  lib/original-name: user_role
+  lib/source: source/table-defaults
+  lib/source-column-alias: user_role
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Company Name
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - company_name
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - company_name
+  name: company_name
+  position: 9
+  semantic_type: type/Company
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: company_name
+  lib/desired-column-alias: company_name
+  lib/original-display-name: Company Name
+  lib/original-name: company_name
+  lib/source: source/table-defaults
+  lib/source-column-alias: company_name
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Company Size
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - company_size
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - company_size
+  name: company_size
+  position: 10
+  semantic_type: type/Company
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: company_size
+  lib/desired-column-alias: company_size
+  lib/original-display-name: Company Size
+  lib/original-name: company_size
+  lib/source: source/table-defaults
+  lib/source-column-alias: company_size
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Company Industry
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - company_industry
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - company_industry
+  name: company_industry
+  position: 11
+  semantic_type: type/Company
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: company_industry
+  lib/desired-column-alias: company_industry
+  lib/original-display-name: Company Industry
+  lib/original-name: company_industry
+  lib/source: source/table-defaults
+  lib/source-column-alias: company_industry
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Subscription Plan
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - subscription_plan
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - subscription_plan
+  name: subscription_plan
+  position: 12
+  semantic_type: type/Subscription
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: subscription_plan
+  lib/desired-column-alias: subscription_plan
+  lib/original-display-name: Subscription Plan
+  lib/original-name: subscription_plan
+  lib/source: source/table-defaults
+  lib/source-column-alias: subscription_plan
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Billing Cycle
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - billing_cycle
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - billing_cycle
+  name: billing_cycle
+  position: 13
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: billing_cycle
+  lib/desired-column-alias: billing_cycle
+  lib/original-display-name: Billing Cycle
+  lib/original-name: billing_cycle
+  lib/source: source/table-defaults
+  lib/source-column-alias: billing_cycle
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Plan Price
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - plan_price
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - plan_price
+  name: plan_price
+  position: 14
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: plan_price
+  lib/desired-column-alias: plan_price
+  lib/original-display-name: Plan Price
+  lib/original-name: plan_price
+  lib/source: source/table-defaults
+  lib/source-column-alias: plan_price
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Contract Value
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - contract_value
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - contract_value
+  name: contract_value
+  position: 15
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: contract_value
+  lib/desired-column-alias: contract_value
+  lib/original-display-name: Contract Value
+  lib/original-name: contract_value
+  lib/source: source/table-defaults
+  lib/source-column-alias: contract_value
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Seats Purchased
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - seats_purchased
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - seats_purchased
+  name: seats_purchased
+  position: 16
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: seats_purchased
+  lib/desired-column-alias: seats_purchased
+  lib/original-display-name: Seats Purchased
+  lib/original-name: seats_purchased
+  lib/source: source/table-defaults
+  lib/source-column-alias: seats_purchased
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Session Duration Minutes
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - session_duration_minutes
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - session_duration_minutes
+  name: session_duration_minutes
+  position: 17
+  semantic_type: type/Duration
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: session_duration_minutes
+  lib/desired-column-alias: session_duration_minutes
+  lib/original-display-name: Session Duration Minutes
+  lib/original-name: session_duration_minutes
+  lib/source: source/table-defaults
+  lib/source-column-alias: session_duration_minutes
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Api Calls Count
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - api_calls_count
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - api_calls_count
+  name: api_calls_count
+  position: 18
+  semantic_type: type/Quantity
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: api_calls_count
+  lib/desired-column-alias: api_calls_count
+  lib/original-display-name: Api Calls Count
+  lib/original-name: api_calls_count
+  lib/source: source/table-defaults
+  lib/source-column-alias: api_calls_count
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Feature Usage Count
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - feature_usage_count
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - feature_usage_count
+  name: feature_usage_count
+  position: 19
+  semantic_type: type/Quantity
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: feature_usage_count
+  lib/desired-column-alias: feature_usage_count
+  lib/original-display-name: Feature Usage Count
+  lib/original-name: feature_usage_count
+  lib/source: source/table-defaults
+  lib/source-column-alias: feature_usage_count
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Admin Actions Count
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - admin_actions_count
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - admin_actions_count
+  name: admin_actions_count
+  position: 20
+  semantic_type: type/Quantity
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: admin_actions_count
+  lib/desired-column-alias: admin_actions_count
+  lib/original-display-name: Admin Actions Count
+  lib/original-name: admin_actions_count
+  lib/source: source/table-defaults
+  lib/source-column-alias: admin_actions_count
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Payment Amount
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - payment_amount
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - payment_amount
+  name: payment_amount
+  position: 21
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: payment_amount
+  lib/desired-column-alias: payment_amount
+  lib/original-display-name: Payment Amount
+  lib/original-name: payment_amount
+  lib/source: source/table-defaults
+  lib/source-column-alias: payment_amount
+  qp/implicit-field?: true
+- active: true
+  base_type: type/DateTimeWithLocalTZ
+  database_type: timestamptz
+  display_name: Billing Date
+  effective_type: type/DateTimeWithLocalTZ
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - b2b_saas_dataset_20260122032052
+    - billing_date
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  - billing_date
+  name: billing_date
+  position: 22
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - b2b_saas_dataset_20260122032052
+  visibility_type: normal
+  lib/deduplicated-name: billing_date
+  lib/desired-column-alias: billing_date
+  lib/original-display-name: Billing Date
+  lib/original-name: billing_date
+  lib/source: source/table-defaults
+  lib/source-column-alias: billing_date
+  qp/implicit-field?: true
+visualization_settings:
+  column_settings: null
+card_schema: 23
+serdes/meta:
+- id: XEt92-fl9oyhngWKOd6yV
+  label: b2b_saas_dataset
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: v1.58.2.6 (cae120d)
+source_card_id: null
+type: model
