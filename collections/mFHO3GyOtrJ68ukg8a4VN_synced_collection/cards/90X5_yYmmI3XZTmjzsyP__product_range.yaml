@@ -1,0 +1,337 @@
+name: Product Range
+description: null
+entity_id: 90X5_yYmmI3XZTmjzsyP_
+created_at: '2025-11-17T01:28:31.155225Z'
+creator_id: jess+growthinstance@metabase.com
+display: table
+archived: false
+collection_id: mFHO3GyOtrJ68ukg8a4VN
+collection_preview: null
+collection_position: null
+query_type: query
+database_id: Acme Postgres
+table_id:
+- Acme Postgres
+- public
+- product_range_20251117012825
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Acme Postgres
+  query:
+    source-table:
+    - Acme Postgres
+    - public
+    - product_range_20251117012825
+  type: query
+result_metadata:
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: _mb_row_id
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - product_range_20251117012825
+    - _mb_row_id
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  - _mb_row_id
+  name: _mb_row_id
+  position: 0
+  semantic_type: type/PK
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  visibility_type: normal
+  lib/deduplicated-name: _mb_row_id
+  lib/desired-column-alias: _mb_row_id
+  lib/original-display-name: _mb_row_id
+  lib/original-name: _mb_row_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: _mb_row_id
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Product Code
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - product_range_20251117012825
+    - product_code
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  - product_code
+  name: product_code
+  position: 1
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  visibility_type: normal
+  lib/deduplicated-name: product_code
+  lib/desired-column-alias: product_code
+  lib/original-display-name: Product Code
+  lib/original-name: product_code
+  lib/source: source/table-defaults
+  lib/source-column-alias: product_code
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Vendor Code
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - product_range_20251117012825
+    - vendor_code
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  - vendor_code
+  name: vendor_code
+  position: 2
+  semantic_type: type/Company
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  visibility_type: normal
+  lib/deduplicated-name: vendor_code
+  lib/desired-column-alias: vendor_code
+  lib/original-display-name: Vendor Code
+  lib/original-name: vendor_code
+  lib/source: source/table-defaults
+  lib/source-column-alias: vendor_code
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Name
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - product_range_20251117012825
+    - name
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  - name
+  name: name
+  position: 3
+  semantic_type: type/Name
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  visibility_type: normal
+  lib/deduplicated-name: name
+  lib/desired-column-alias: name
+  lib/original-display-name: Name
+  lib/original-name: name
+  lib/source: source/table-defaults
+  lib/source-column-alias: name
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: Retail Price
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - product_range_20251117012825
+    - retail_price
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  - retail_price
+  name: retail_price
+  position: 4
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  visibility_type: normal
+  lib/deduplicated-name: retail_price
+  lib/desired-column-alias: retail_price
+  lib/original-display-name: Retail Price
+  lib/original-name: retail_price
+  lib/source: source/table-defaults
+  lib/source-column-alias: retail_price
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Base Unit
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - product_range_20251117012825
+    - base_unit
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  - base_unit
+  name: base_unit
+  position: 5
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  visibility_type: normal
+  lib/deduplicated-name: base_unit
+  lib/desired-column-alias: base_unit
+  lib/original-display-name: Base Unit
+  lib/original-name: base_unit
+  lib/source: source/table-defaults
+  lib/source-column-alias: base_unit
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Country Of Origin
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - product_range_20251117012825
+    - country_of_origin
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  - country_of_origin
+  name: country_of_origin
+  position: 6
+  semantic_type: type/Country
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  visibility_type: normal
+  lib/deduplicated-name: country_of_origin
+  lib/desired-column-alias: country_of_origin
+  lib/original-display-name: Country Of Origin
+  lib/original-name: country_of_origin
+  lib/source: source/table-defaults
+  lib/source-column-alias: country_of_origin
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: Size
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - product_range_20251117012825
+    - size
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  - size
+  name: size
+  position: 7
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  visibility_type: normal
+  lib/deduplicated-name: size
+  lib/desired-column-alias: size
+  lib/original-display-name: Size
+  lib/original-name: size
+  lib/source: source/table-defaults
+  lib/source-column-alias: size
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: Abv
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - product_range_20251117012825
+    - abv
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  - abv
+  name: abv
+  position: 8
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - product_range_20251117012825
+  visibility_type: normal
+  lib/deduplicated-name: abv
+  lib/desired-column-alias: abv
+  lib/original-display-name: Abv
+  lib/original-name: abv
+  lib/source: source/table-defaults
+  lib/source-column-alias: abv
+  qp/implicit-field?: true
+visualization_settings:
+  column_settings: null
+card_schema: 23
+serdes/meta:
+- id: 90X5_yYmmI3XZTmjzsyP_
+  label: product_range
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: v1.57.2 (cef18f9)
+source_card_id: null
+type: model
