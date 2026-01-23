@@ -1,0 +1,1307 @@
+name: GDP per capita
+description: null
+entity_id: pHL7Loiez7uD08DgzMfWS
+created_at: '2026-01-21T23:10:58.756976Z'
+creator_id: jess+growthinstance@metabase.com
+display: table
+archived: false
+collection_id: mFHO3GyOtrJ68ukg8a4VN
+collection_preview: null
+collection_position: null
+query_type: query
+database_id: Acme Postgres
+table_id:
+- Acme Postgres
+- public
+- gross_domestic_product_gdp_and_main_components_p_20260121231051
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Acme Postgres
+  query:
+    source-table:
+    - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  type: query
+result_metadata:
+- active: true
+  base_type: type/BigInteger
+  database_type: bigserial
+  display_name: _mb_row_id
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - _mb_row_id
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - _mb_row_id
+  name: _mb_row_id
+  position: 0
+  semantic_type: type/PK
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: _mb_row_id
+  lib/desired-column-alias: _mb_row_id
+  lib/model-display-name: _mb_row_id
+  lib/original-display-name: _mb_row_id
+  lib/original-name: _mb_row_id
+  lib/source: source/previous-stage
+  lib/source-column-alias: _mb_row_id
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Frq
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - frq
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - frq
+  name: frq
+  position: 1
+  semantic_type: type/Category
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: frq
+  lib/desired-column-alias: frq
+  lib/model-display-name: Frq
+  lib/original-display-name: Frq
+  lib/original-name: frq
+  lib/source: source/previous-stage
+  lib/source-column-alias: frq
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Unit
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - unit
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - unit
+  name: unit
+  position: 2
+  semantic_type: type/Category
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: unit
+  lib/desired-column-alias: unit
+  lib/model-display-name: Unit
+  lib/original-display-name: Unit
+  lib/original-name: unit
+  lib/source: source/previous-stage
+  lib/source-column-alias: unit
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Na Itm
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - na_itm
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - na_itm
+  name: na_itm
+  position: 3
+  semantic_type: type/Category
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: na_itm
+  lib/desired-column-alias: na_itm
+  lib/model-display-name: Na Itm
+  lib/original-display-name: Na Itm
+  lib/original-name: na_itm
+  lib/source: source/previous-stage
+  lib/source-column-alias: na_itm
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Go
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - go
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - go
+  name: go
+  position: 4
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: go
+  lib/desired-column-alias: go
+  lib/model-display-name: Go
+  lib/original-display-name: Go
+  lib/original-name: go
+  lib/source: source/previous-stage
+  lib/source-column-alias: go
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '1995'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '1995'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '1995'
+  name: '1995'
+  position: 5
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '1995'
+  lib/desired-column-alias: '1995'
+  lib/model-display-name: '1995'
+  lib/original-display-name: '1995'
+  lib/original-name: '1995'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '1995'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '1996'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '1996'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '1996'
+  name: '1996'
+  position: 6
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '1996'
+  lib/desired-column-alias: '1996'
+  lib/model-display-name: '1996'
+  lib/original-display-name: '1996'
+  lib/original-name: '1996'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '1996'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '1997'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '1997'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '1997'
+  name: '1997'
+  position: 7
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '1997'
+  lib/desired-column-alias: '1997'
+  lib/model-display-name: '1997'
+  lib/original-display-name: '1997'
+  lib/original-name: '1997'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '1997'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '1998'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '1998'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '1998'
+  name: '1998'
+  position: 8
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '1998'
+  lib/desired-column-alias: '1998'
+  lib/model-display-name: '1998'
+  lib/original-display-name: '1998'
+  lib/original-name: '1998'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '1998'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '1999'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '1999'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '1999'
+  name: '1999'
+  position: 9
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '1999'
+  lib/desired-column-alias: '1999'
+  lib/model-display-name: '1999'
+  lib/original-display-name: '1999'
+  lib/original-name: '1999'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '1999'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2000'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2000'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2000'
+  name: '2000'
+  position: 10
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2000'
+  lib/desired-column-alias: '2000'
+  lib/model-display-name: '2000'
+  lib/original-display-name: '2000'
+  lib/original-name: '2000'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2000'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2001'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2001'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2001'
+  name: '2001'
+  position: 11
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2001'
+  lib/desired-column-alias: '2001'
+  lib/model-display-name: '2001'
+  lib/original-display-name: '2001'
+  lib/original-name: '2001'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2001'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2002'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2002'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2002'
+  name: '2002'
+  position: 12
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2002'
+  lib/desired-column-alias: '2002'
+  lib/model-display-name: '2002'
+  lib/original-display-name: '2002'
+  lib/original-name: '2002'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2002'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2003'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2003'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2003'
+  name: '2003'
+  position: 13
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2003'
+  lib/desired-column-alias: '2003'
+  lib/model-display-name: '2003'
+  lib/original-display-name: '2003'
+  lib/original-name: '2003'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2003'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2004'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2004'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2004'
+  name: '2004'
+  position: 14
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2004'
+  lib/desired-column-alias: '2004'
+  lib/model-display-name: '2004'
+  lib/original-display-name: '2004'
+  lib/original-name: '2004'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2004'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2005'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2005'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2005'
+  name: '2005'
+  position: 15
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2005'
+  lib/desired-column-alias: '2005'
+  lib/model-display-name: '2005'
+  lib/original-display-name: '2005'
+  lib/original-name: '2005'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2005'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2006'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2006'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2006'
+  name: '2006'
+  position: 16
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2006'
+  lib/desired-column-alias: '2006'
+  lib/model-display-name: '2006'
+  lib/original-display-name: '2006'
+  lib/original-name: '2006'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2006'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2007'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2007'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2007'
+  name: '2007'
+  position: 17
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2007'
+  lib/desired-column-alias: '2007'
+  lib/model-display-name: '2007'
+  lib/original-display-name: '2007'
+  lib/original-name: '2007'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2007'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2008'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2008'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2008'
+  name: '2008'
+  position: 18
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2008'
+  lib/desired-column-alias: '2008'
+  lib/model-display-name: '2008'
+  lib/original-display-name: '2008'
+  lib/original-name: '2008'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2008'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2009'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2009'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2009'
+  name: '2009'
+  position: 19
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2009'
+  lib/desired-column-alias: '2009'
+  lib/model-display-name: '2009'
+  lib/original-display-name: '2009'
+  lib/original-name: '2009'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2009'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2010'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2010'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2010'
+  name: '2010'
+  position: 20
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2010'
+  lib/desired-column-alias: '2010'
+  lib/model-display-name: '2010'
+  lib/original-display-name: '2010'
+  lib/original-name: '2010'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2010'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2011'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2011'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2011'
+  name: '2011'
+  position: 21
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2011'
+  lib/desired-column-alias: '2011'
+  lib/model-display-name: '2011'
+  lib/original-display-name: '2011'
+  lib/original-name: '2011'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2011'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2012'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2012'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2012'
+  name: '2012'
+  position: 22
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2012'
+  lib/desired-column-alias: '2012'
+  lib/model-display-name: '2012'
+  lib/original-display-name: '2012'
+  lib/original-name: '2012'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2012'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2013'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2013'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2013'
+  name: '2013'
+  position: 23
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2013'
+  lib/desired-column-alias: '2013'
+  lib/model-display-name: '2013'
+  lib/original-display-name: '2013'
+  lib/original-name: '2013'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2013'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2014'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2014'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2014'
+  name: '2014'
+  position: 24
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2014'
+  lib/desired-column-alias: '2014'
+  lib/model-display-name: '2014'
+  lib/original-display-name: '2014'
+  lib/original-name: '2014'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2014'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2015'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2015'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2015'
+  name: '2015'
+  position: 25
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2015'
+  lib/desired-column-alias: '2015'
+  lib/model-display-name: '2015'
+  lib/original-display-name: '2015'
+  lib/original-name: '2015'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2015'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2016'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2016'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2016'
+  name: '2016'
+  position: 26
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2016'
+  lib/desired-column-alias: '2016'
+  lib/model-display-name: '2016'
+  lib/original-display-name: '2016'
+  lib/original-name: '2016'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2016'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2017'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2017'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2017'
+  name: '2017'
+  position: 27
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2017'
+  lib/desired-column-alias: '2017'
+  lib/model-display-name: '2017'
+  lib/original-display-name: '2017'
+  lib/original-name: '2017'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2017'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2018'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2018'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2018'
+  name: '2018'
+  position: 28
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2018'
+  lib/desired-column-alias: '2018'
+  lib/model-display-name: '2018'
+  lib/original-display-name: '2018'
+  lib/original-name: '2018'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2018'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2019'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2019'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2019'
+  name: '2019'
+  position: 29
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2019'
+  lib/desired-column-alias: '2019'
+  lib/model-display-name: '2019'
+  lib/original-display-name: '2019'
+  lib/original-name: '2019'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2019'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2020'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2020'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2020'
+  name: '2020'
+  position: 30
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2020'
+  lib/desired-column-alias: '2020'
+  lib/model-display-name: '2020'
+  lib/original-display-name: '2020'
+  lib/original-name: '2020'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2020'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2021'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2021'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2021'
+  name: '2021'
+  position: 31
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2021'
+  lib/desired-column-alias: '2021'
+  lib/model-display-name: '2021'
+  lib/original-display-name: '2021'
+  lib/original-name: '2021'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2021'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2022'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2022'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2022'
+  name: '2022'
+  position: 32
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2022'
+  lib/desired-column-alias: '2022'
+  lib/model-display-name: '2022'
+  lib/original-display-name: '2022'
+  lib/original-name: '2022'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2022'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Float
+  database_type: float8
+  display_name: '2023'
+  effective_type: type/Float
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2023'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2023'
+  name: '2023'
+  position: 33
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2023'
+  lib/desired-column-alias: '2023'
+  lib/model-display-name: '2023'
+  lib/original-display-name: '2023'
+  lib/original-name: '2023'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2023'
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: '2024'
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - gross_domestic_product_gdp_and_main_components_p_20260121231051
+    - '2024'
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  - '2024'
+  name: '2024'
+  position: 34
+  semantic_type: null
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - gross_domestic_product_gdp_and_main_components_p_20260121231051
+  visibility_type: normal
+  lib/breakout?: false
+  lib/card-id: 694
+  lib/deduplicated-name: '2024'
+  lib/desired-column-alias: '2024'
+  lib/model-display-name: '2024'
+  lib/original-display-name: '2024'
+  lib/original-name: '2024'
+  lib/source: source/previous-stage
+  lib/source-column-alias: '2024'
+  qp/implicit-field?: true
+visualization_settings:
+  column_settings: null
+  table.cell_column: '1995'
+  table.pivot_column: frq
+card_schema: 23
+serdes/meta:
+- id: pHL7Loiez7uD08DgzMfWS
+  label: gdp_per_capita
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: v1.58.2.6 (cae120d)
+source_card_id: null
+type: model
