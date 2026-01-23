@@ -1,0 +1,337 @@
+name: Nps Survey Results July
+description: null
+entity_id: qr2gBygQOs6fxoIrNg5-V
+created_at: '2025-11-17T01:29:20.012924Z'
+creator_id: jess+growthinstance@metabase.com
+display: table
+archived: false
+collection_id: mFHO3GyOtrJ68ukg8a4VN
+collection_preview: null
+collection_position: null
+query_type: query
+database_id: Acme Postgres
+table_id:
+- Acme Postgres
+- public
+- nps_survey_results_july_20251117012915
+enable_embedding: false
+embedding_params: null
+made_public_by_id: null
+public_uuid: null
+parameters: []
+parameter_mappings: []
+dataset_query:
+  database: Acme Postgres
+  query:
+    source-table:
+    - Acme Postgres
+    - public
+    - nps_survey_results_july_20251117012915
+  type: query
+result_metadata:
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: _mb_row_id
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - nps_survey_results_july_20251117012915
+    - _mb_row_id
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  - _mb_row_id
+  name: _mb_row_id
+  position: 0
+  semantic_type: type/PK
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  visibility_type: normal
+  lib/deduplicated-name: _mb_row_id
+  lib/desired-column-alias: _mb_row_id
+  lib/original-display-name: _mb_row_id
+  lib/original-name: _mb_row_id
+  lib/source: source/table-defaults
+  lib/source-column-alias: _mb_row_id
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: ID
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - nps_survey_results_july_20251117012915
+    - id
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  - id
+  name: id
+  position: 1
+  semantic_type: type/PK
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  visibility_type: normal
+  lib/deduplicated-name: id
+  lib/desired-column-alias: id
+  lib/original-display-name: ID
+  lib/original-name: id
+  lib/source: source/table-defaults
+  lib/source-column-alias: id
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: First Name
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - nps_survey_results_july_20251117012915
+    - first_name
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  - first_name
+  name: first_name
+  position: 2
+  semantic_type: type/Name
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  visibility_type: normal
+  lib/deduplicated-name: first_name
+  lib/desired-column-alias: first_name
+  lib/original-display-name: First Name
+  lib/original-name: first_name
+  lib/source: source/table-defaults
+  lib/source-column-alias: first_name
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Last Name
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - nps_survey_results_july_20251117012915
+    - last_name
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  - last_name
+  name: last_name
+  position: 3
+  semantic_type: type/Name
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  visibility_type: normal
+  lib/deduplicated-name: last_name
+  lib/desired-column-alias: last_name
+  lib/original-display-name: Last Name
+  lib/original-name: last_name
+  lib/source: source/table-defaults
+  lib/source-column-alias: last_name
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Email
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - nps_survey_results_july_20251117012915
+    - email
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  - email
+  name: email
+  position: 4
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  visibility_type: normal
+  lib/deduplicated-name: email
+  lib/desired-column-alias: email
+  lib/original-display-name: Email
+  lib/original-name: email
+  lib/source: source/table-defaults
+  lib/source-column-alias: email
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Created At
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - nps_survey_results_july_20251117012915
+    - created_at
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  - created_at
+  name: created_at
+  position: 5
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  visibility_type: normal
+  lib/deduplicated-name: created_at
+  lib/desired-column-alias: created_at
+  lib/original-display-name: Created At
+  lib/original-name: created_at
+  lib/source: source/table-defaults
+  lib/source-column-alias: created_at
+  qp/implicit-field?: true
+- active: true
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: How Likely Are You To Recommend
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - nps_survey_results_july_20251117012915
+    - how_likely_are_you_to_recommend
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  - how_likely_are_you_to_recommend
+  name: how_likely_are_you_to_recommend
+  position: 6
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  visibility_type: normal
+  lib/deduplicated-name: how_likely_are_you_to_recommend
+  lib/desired-column-alias: how_likely_are_you_to_recommend
+  lib/original-display-name: How Likely Are You To Recommend
+  lib/original-name: how_likely_are_you_to_recommend
+  lib/source: source/table-defaults
+  lib/source-column-alias: how_likely_are_you_to_recommend
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Why Did You Provide That Score
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - nps_survey_results_july_20251117012915
+    - why_did_you_provide_that_score
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  - why_did_you_provide_that_score
+  name: why_did_you_provide_that_score
+  position: 7
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  visibility_type: normal
+  lib/deduplicated-name: why_did_you_provide_that_score
+  lib/desired-column-alias: why_did_you_provide_that_score
+  lib/original-display-name: Why Did You Provide That Score
+  lib/original-name: why_did_you_provide_that_score
+  lib/source: source/table-defaults
+  lib/source-column-alias: why_did_you_provide_that_score
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: What Can We Do To Improve
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - nps_survey_results_july_20251117012915
+    - what_can_we_do_to_improve
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  - what_can_we_do_to_improve
+  name: what_can_we_do_to_improve
+  position: 8
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - nps_survey_results_july_20251117012915
+  visibility_type: normal
+  lib/deduplicated-name: what_can_we_do_to_improve
+  lib/desired-column-alias: what_can_we_do_to_improve
+  lib/original-display-name: What Can We Do To Improve
+  lib/original-name: what_can_we_do_to_improve
+  lib/source: source/table-defaults
+  lib/source-column-alias: what_can_we_do_to_improve
+  qp/implicit-field?: true
+visualization_settings:
+  column_settings: null
+card_schema: 23
+serdes/meta:
+- id: qr2gBygQOs6fxoIrNg5-V
+  label: nps_survey_results_july
+  model: Card
+archived_directly: false
+dashboard_id: null
+document_id: null
+embedding_type: null
+metabase_version: v1.57.2 (cef18f9)
+source_card_id: null
+type: model
