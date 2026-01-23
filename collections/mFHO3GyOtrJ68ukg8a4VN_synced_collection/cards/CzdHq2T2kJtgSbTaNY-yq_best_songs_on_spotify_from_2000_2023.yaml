@@ -523,6 +523,6 @@ archived_directly: false
 dashboard_id: null
 document_id: null
 embedding_type: null
-metabase_version: v1.57.2 (cef18f9)
+metabase_version: v1.58.3.1 (a942e62)
 source_card_id: null
 type: model

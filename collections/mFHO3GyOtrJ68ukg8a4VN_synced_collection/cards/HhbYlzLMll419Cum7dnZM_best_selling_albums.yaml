@@ -1,7 +1,7 @@
-name: Breweries Us(updated Feb)
+name: Best Selling Albums
 description: null
-entity_id: fYoaNj-5XqZ1b-xQ7_B-4
-created_at: '2025-11-17T01:30:47.266549Z'
+entity_id: HhbYlzLMll419Cum7dnZM
+created_at: '2026-01-22T02:24:11.527273Z'
 creator_id: jess+growthinstance@metabase.com
 display: table
 archived: false
@@ -13,7 +13,7 @@ database_id: Acme Postgres
 table_id:
 - Acme Postgres
 - public
-- breweries_us_updated_feb_20251117013042
+- best_selling_albums_20260122022407
 enable_embedding: false
 embedding_params: null
 made_public_by_id: null
@@ -26,7 +26,7 @@ dataset_query:
     source-table:
     - Acme Postgres
     - public
-    - breweries_us_updated_feb_20251117013042
+    - best_selling_albums_20260122022407
   type: query
 result_metadata:
 - active: true
@@ -38,13 +38,13 @@ result_metadata:
   - field
   - - Acme Postgres
     - public
-    - breweries_us_updated_feb_20251117013042
+    - best_selling_albums_20260122022407
     - _mb_row_id
   - null
   id:
   - Acme Postgres
   - public
-  - breweries_us_updated_feb_20251117013042
+  - best_selling_albums_20260122022407
   - _mb_row_id
   name: _mb_row_id
   position: 0
@@ -53,7 +53,7 @@ result_metadata:
   table_id:
   - Acme Postgres
   - public
-  - breweries_us_updated_feb_20251117013042
+  - best_selling_albums_20260122022407
   visibility_type: normal
   lib/deduplicated-name: _mb_row_id
   lib/desired-column-alias: _mb_row_id
@@ -65,240 +65,239 @@ result_metadata:
 - active: true
   base_type: type/Text
   database_type: varchar
-  display_name: Brewery Name
+  display_name: Album
   effective_type: type/Text
   field_ref:
   - field
   - - Acme Postgres
     - public
-    - breweries_us_updated_feb_20251117013042
-    - brewery_name
+    - best_selling_albums_20260122022407
+    - album
   - null
   id:
   - Acme Postgres
   - public
-  - breweries_us_updated_feb_20251117013042
-  - brewery_name
-  name: brewery_name
+  - best_selling_albums_20260122022407
+  - album
+  name: album
   position: 1
   source: fields
   table_id:
   - Acme Postgres
   - public
-  - breweries_us_updated_feb_20251117013042
+  - best_selling_albums_20260122022407
   visibility_type: normal
-  lib/deduplicated-name: brewery_name
-  lib/desired-column-alias: brewery_name
-  lib/original-display-name: Brewery Name
-  lib/original-name: brewery_name
+  lib/deduplicated-name: album
+  lib/desired-column-alias: album
+  lib/original-display-name: Album
+  lib/original-name: album
   lib/source: source/table-defaults
-  lib/source-column-alias: brewery_name
+  lib/source-column-alias: album
   qp/implicit-field?: true
 - active: true
   base_type: type/Text
   database_type: varchar
-  display_name: Type
+  display_name: Artist
   effective_type: type/Text
   field_ref:
   - field
   - - Acme Postgres
     - public
-    - breweries_us_updated_feb_20251117013042
-    - type
+    - best_selling_albums_20260122022407
+    - artist
   - null
   id:
   - Acme Postgres
   - public
-  - breweries_us_updated_feb_20251117013042
-  - type
-  name: type
+  - best_selling_albums_20260122022407
+  - artist
+  name: artist
   position: 2
-  semantic_type: type/Category
   source: fields
   table_id:
   - Acme Postgres
   - public
-  - breweries_us_updated_feb_20251117013042
+  - best_selling_albums_20260122022407
   visibility_type: normal
-  lib/deduplicated-name: type
-  lib/desired-column-alias: type
-  lib/original-display-name: Type
-  lib/original-name: type
+  lib/deduplicated-name: artist
+  lib/desired-column-alias: artist
+  lib/original-display-name: Artist
+  lib/original-name: artist
   lib/source: source/table-defaults
-  lib/source-column-alias: type
-  qp/implicit-field?: true
-- active: true
-  base_type: type/Text
-  database_type: varchar
-  display_name: Address
-  effective_type: type/Text
-  field_ref:
-  - field
-  - - Acme Postgres
-    - public
-    - breweries_us_updated_feb_20251117013042
-    - address
-  - null
-  id:
-  - Acme Postgres
-  - public
-  - breweries_us_updated_feb_20251117013042
-  - address
-  name: address
-  position: 3
-  source: fields
-  table_id:
-  - Acme Postgres
-  - public
-  - breweries_us_updated_feb_20251117013042
-  visibility_type: normal
-  lib/deduplicated-name: address
-  lib/desired-column-alias: address
-  lib/original-display-name: Address
-  lib/original-name: address
-  lib/source: source/table-defaults
-  lib/source-column-alias: address
-  qp/implicit-field?: true
-- active: true
-  base_type: type/Text
-  database_type: varchar
-  display_name: Website
-  effective_type: type/Text
-  field_ref:
-  - field
-  - - Acme Postgres
-    - public
-    - breweries_us_updated_feb_20251117013042
-    - website
-  - null
-  id:
-  - Acme Postgres
-  - public
-  - breweries_us_updated_feb_20251117013042
-  - website
-  name: website
-  position: 4
-  source: fields
-  table_id:
-  - Acme Postgres
-  - public
-  - breweries_us_updated_feb_20251117013042
-  visibility_type: normal
-  lib/deduplicated-name: website
-  lib/desired-column-alias: website
-  lib/original-display-name: Website
-  lib/original-name: website
-  lib/source: source/table-defaults
-  lib/source-column-alias: website
-  qp/implicit-field?: true
-- active: true
-  base_type: type/Text
-  database_type: varchar
-  display_name: State
-  effective_type: type/Text
-  field_ref:
-  - field
-  - - Acme Postgres
-    - public
-    - breweries_us_updated_feb_20251117013042
-    - state
-  - null
-  id:
-  - Acme Postgres
-  - public
-  - breweries_us_updated_feb_20251117013042
-  - state
-  name: state
-  position: 5
-  source: fields
-  table_id:
-  - Acme Postgres
-  - public
-  - breweries_us_updated_feb_20251117013042
-  visibility_type: normal
-  lib/deduplicated-name: state
-  lib/desired-column-alias: state
-  lib/original-display-name: State
-  lib/original-name: state
-  lib/source: source/table-defaults
-  lib/source-column-alias: state
+  lib/source-column-alias: artist
   qp/implicit-field?: true
 - active: true
   base_type: type/BigInteger
   database_type: int8
-  display_name: State Breweries
+  display_name: Year
   effective_type: type/BigInteger
   field_ref:
   - field
   - - Acme Postgres
     - public
-    - breweries_us_updated_feb_20251117013042
-    - state_breweries
+    - best_selling_albums_20260122022407
+    - year
   - null
   id:
   - Acme Postgres
   - public
-  - breweries_us_updated_feb_20251117013042
-  - state_breweries
-  name: state_breweries
-  position: 6
+  - best_selling_albums_20260122022407
+  - year
+  name: year
+  position: 3
   source: fields
   table_id:
   - Acme Postgres
   - public
-  - breweries_us_updated_feb_20251117013042
+  - best_selling_albums_20260122022407
   visibility_type: normal
-  lib/deduplicated-name: state_breweries
-  lib/desired-column-alias: state_breweries
-  lib/original-display-name: State Breweries
-  lib/original-name: state_breweries
+  lib/deduplicated-name: year
+  lib/desired-column-alias: year
+  lib/original-display-name: Year
+  lib/original-name: year
   lib/source: source/table-defaults
-  lib/source-column-alias: state_breweries
+  lib/source-column-alias: year
   qp/implicit-field?: true
 - active: true
-  base_type: type/Float
-  database_type: float8
-  display_name: Rating
-  effective_type: type/Float
+  base_type: type/BigInteger
+  database_type: int8
+  display_name: Sales Millions
+  effective_type: type/BigInteger
   field_ref:
   - field
   - - Acme Postgres
     - public
-    - breweries_us_updated_feb_20251117013042
-    - rating
+    - best_selling_albums_20260122022407
+    - sales_millions
   - null
   id:
   - Acme Postgres
   - public
-  - breweries_us_updated_feb_20251117013042
-  - rating
-  name: rating
-  position: 7
-  semantic_type: type/Score
+  - best_selling_albums_20260122022407
+  - sales_millions
+  name: sales_millions
+  position: 4
   source: fields
   table_id:
   - Acme Postgres
   - public
-  - breweries_us_updated_feb_20251117013042
+  - best_selling_albums_20260122022407
   visibility_type: normal
-  lib/deduplicated-name: rating
-  lib/desired-column-alias: rating
-  lib/original-display-name: Rating
-  lib/original-name: rating
+  lib/deduplicated-name: sales_millions
+  lib/desired-column-alias: sales_millions
+  lib/original-display-name: Sales Millions
+  lib/original-name: sales_millions
   lib/source: source/table-defaults
-  lib/source-column-alias: rating
+  lib/source-column-alias: sales_millions
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Decade
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_selling_albums_20260122022407
+    - decade
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_selling_albums_20260122022407
+  - decade
+  name: decade
+  position: 5
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_selling_albums_20260122022407
+  visibility_type: normal
+  lib/deduplicated-name: decade
+  lib/desired-column-alias: decade
+  lib/original-display-name: Decade
+  lib/original-name: decade
+  lib/source: source/table-defaults
+  lib/source-column-alias: decade
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Country
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_selling_albums_20260122022407
+    - country
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_selling_albums_20260122022407
+  - country
+  name: country
+  position: 6
+  semantic_type: type/Country
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_selling_albums_20260122022407
+  visibility_type: normal
+  lib/deduplicated-name: country
+  lib/desired-column-alias: country
+  lib/original-display-name: Country
+  lib/original-name: country
+  lib/source: source/table-defaults
+  lib/source-column-alias: country
+  qp/implicit-field?: true
+- active: true
+  base_type: type/Text
+  database_type: varchar
+  display_name: Genre
+  effective_type: type/Text
+  field_ref:
+  - field
+  - - Acme Postgres
+    - public
+    - best_selling_albums_20260122022407
+    - genre
+  - null
+  id:
+  - Acme Postgres
+  - public
+  - best_selling_albums_20260122022407
+  - genre
+  name: genre
+  position: 7
+  source: fields
+  table_id:
+  - Acme Postgres
+  - public
+  - best_selling_albums_20260122022407
+  visibility_type: normal
+  lib/deduplicated-name: genre
+  lib/desired-column-alias: genre
+  lib/original-display-name: Genre
+  lib/original-name: genre
+  lib/source: source/table-defaults
+  lib/source-column-alias: genre
   qp/implicit-field?: true
 visualization_settings:
   column_settings: null
 card_schema: 23
 serdes/meta:
-- id: fYoaNj-5XqZ1b-xQ7_B-4
-  label: breweries_us_updated_feb_
+- id: HhbYlzLMll419Cum7dnZM
+  label: best_selling_albums
   model: Card
 archived_directly: false
 dashboard_id: null
 document_id: null
 embedding_type: null
-metabase_version: v1.58.3.1 (a942e62)
+metabase_version: v1.58.2.6 (cae120d)
 source_card_id: null
 type: model
