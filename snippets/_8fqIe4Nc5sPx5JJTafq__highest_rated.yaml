@@ -1,0 +1,18 @@
+name: Highest rated
+description: null
+entity_id: _8fqIe4Nc5sPx5JJTafq_
+created_at: '2025-11-11T02:58:13.936298Z'
+archived: false
+collection_id: null
+content: rating > {{min_rating}}
+creator_id: jess+growthinstance@metabase.com
+template_tags:
+  min_rating:
+    display-name: Min Rating
+    id: 7550e63d-43fb-485d-81bc-73a372b51404
+    name: min_rating
+    type: text
+serdes/meta:
+- id: _8fqIe4Nc5sPx5JJTafq_
+  label: highest_rated
+  model: NativeQuerySnippet

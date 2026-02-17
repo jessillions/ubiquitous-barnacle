@@ -1,0 +1,18 @@
+name: Expensive products
+description: null
+entity_id: 0KzYOfGU2CGA8clUE8rCK
+created_at: '2025-11-11T02:53:38.807162Z'
+archived: false
+collection_id: null
+content: price > {{min_price}}
+creator_id: jess+growthinstance@metabase.com
+template_tags:
+  min_price:
+    display-name: Min Price
+    id: 9980ceba-526d-4863-b49c-e720e3488feb
+    name: min_price
+    type: text
+serdes/meta:
+- id: 0KzYOfGU2CGA8clUE8rCK
+  label: expensive_products
+  model: NativeQuerySnippet
