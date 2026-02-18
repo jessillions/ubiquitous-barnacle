@@ -1,0 +1,47 @@
+collection_id: null
+created_at: '2026-02-17T23:46:26.111907Z'
+creator_id: jess+growthinstance@metabase.com
+description: null
+entity_id: Zwh8AQLn9X7dw0CcAkcnj
+name: GDP
+owner_email: null
+owner_user_id: jess+growthinstance@metabase.com
+source:
+  query:
+    database: Acme Postgres
+    native:
+      query: |-
+        SELECT
+          t."go"     AS country,
+          t."na_itm" AS metric,
+          t."unit"   AS unit,
+          v.year::int AS year,
+          NULLIF(REPLACE(v.val, ',', ''), '')::numeric AS value
+        FROM "gross_domestic_product_gdp_and_main_components_p_20260121231051" t
+        CROSS JOIN LATERAL (
+          VALUES
+            ('1995', t."1995"::text), ('1996', t."1996"::text), ('1997', t."1997"::text), ('1998', t."1998"::text), ('1999', t."1999"::text),
+            ('2000', t."2000"::text), ('2001', t."2001"::text), ('2002', t."2002"::text), ('2003', t."2003"::text), ('2004', t."2004"::text),
+            ('2005', t."2005"::text), ('2006', t."2006"::text), ('2007', t."2007"::text), ('2008', t."2008"::text), ('2009', t."2009"::text),
+            ('2010', t."2010"::text), ('2011', t."2011"::text), ('2012', t."2012"::text), ('2013', t."2013"::text), ('2014', t."2014"::text),
+            ('2015', t."2015"::text), ('2016', t."2016"::text), ('2017', t."2017"::text), ('2018', t."2018"::text), ('2019', t."2019"::text),
+            ('2020', t."2020"::text), ('2021', t."2021"::text), ('2022', t."2022"::text), ('2023', t."2023"::text), ('2024', t."2024")
+        ) v(year, val)
+        WHERE t."go" IS NOT NULL;
+    type: native
+  source-incremental-strategy:
+    type: checkpoint
+  type: query
+source_database_id: Acme Postgres
+tags: []
+target:
+  database: Acme Postgres
+  name: gdp
+  schema: public
+  target-incremental-strategy:
+    type: append
+  type: table-incremental
+serdes/meta:
+- id: Zwh8AQLn9X7dw0CcAkcnj
+  label: gdp
+  model: Transform
