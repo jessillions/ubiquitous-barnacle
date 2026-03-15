@@ -1,0 +1,13 @@
+{
+  "name": "cio-template-sync",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GitOps workflow for managing Customer.io email templates as YAML",
+  "scripts": {
+    "export": "node scripts/export-templates.js",
+    "apply": "node scripts/apply-template.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
