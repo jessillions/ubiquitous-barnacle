@@ -5,9 +5,13 @@
   "description": "GitOps workflow for managing Customer.io email templates as YAML",
   "scripts": {
     "export": "node scripts/export-templates.js",
-    "apply": "node scripts/apply-template.js"
+    "apply": "node scripts/apply-template.js",
+    "apply:body": "node scripts/apply-body.js",
+    "apply:clipboard": "node scripts/apply-body-clipboard.js"
   },
   "dependencies": {
-    "js-yaml": "^4.1.0"
+    "glob": "^10.3.0",
+    "js-yaml": "^4.1.0",
+    "puppeteer": "^22.0.0"
   }
 }
