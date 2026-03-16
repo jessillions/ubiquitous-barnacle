@@ -35,45 +35,28 @@ function slugify(name) {
 }
 
 async function fetchAllCampaigns() {
-  const campaigns = [];
-  let hasMore = true;
-  let page = 1;
-  while (hasMore) {
-    const data = await apiFetch(`/campaigns?page=${page}`);
-    if (data.campaigns && data.campaigns.length > 0) {
-      campaigns.push(...data.campaigns);
-      page++;
-    } else {
-      hasMore = false;
-    }
-  }
-  return campaigns;
+  const data = await apiFetch("/campaigns");
+  return data.campaigns || [];
 }
 
-async function fetchCampaignActions(campaignId) {
-  const data = await apiFetch(`/campaigns/${campaignId}/actions`);
-  return data.actions || [];
+async function fetchActionDetail(campaignId, actionId) {
+  const data = await apiFetch(`/campaigns/${campaignId}/actions/${actionId}`);
+  return data.action || data;
+}
+
+async function fetchNewsletterContents(newsletterId) {
+  const data = await apiFetch(`/newsletters/${newsletterId}/contents`);
+  return data.contents || [];
 }
 
 async function fetchAllNewsletters() {
-  const newsletters = [];
-  let hasMore = true;
-  let page = 1;
-  while (hasMore) {
-    const data = await apiFetch(`/newsletters?page=${page}`);
-    if (data.newsletters && data.newsletters.length > 0) {
-      newsletters.push(...data.newsletters);
-      page++;
-    } else {
-      hasMore = false;
-    }
-  }
-  return newsletters;
+  const data = await apiFetch("/newsletters");
+  return data.newsletters || [];
 }
 
-function extractEmailTemplate(action, campaign) {
+function buildCampaignTemplate(action, campaign) {
   return {
-    id: action.id,
+    id: Number(action.id),
     campaign_id: campaign.id,
     type: "campaign_action",
     name: action.name || `${campaign.name} - Action ${action.id}`,
@@ -84,15 +67,16 @@ function extractEmailTemplate(action, campaign) {
   };
 }
 
-function extractNewsletterTemplate(newsletter) {
+function buildNewsletterTemplate(content, newsletter) {
   return {
     id: newsletter.id,
+    content_id: content.id,
     type: "newsletter",
-    name: newsletter.name || `Newsletter ${newsletter.id}`,
-    subject: newsletter.subject || "",
-    preheader: newsletter.preheader_text || "",
-    body_html: newsletter.body || "",
-    body_text: newsletter.body_plain || "",
+    name: content.name || newsletter.name || `Newsletter ${newsletter.id}`,
+    subject: content.subject || "",
+    preheader: content.preheader_text || "",
+    body_html: content.body || "",
+    body_text: content.body_plain || "",
   };
 }
 
@@ -123,15 +107,13 @@ async function main() {
   let templateCount = 0;
 
   for (const campaign of campaigns) {
-    const actions = await fetchCampaignActions(campaign.id);
-    const emailActions = actions.filter((a) => a.type === "email");
+    const emailActions = (campaign.actions || []).filter((a) => a.type === "email");
 
-    for (const action of emailActions) {
-      const template = extractEmailTemplate(action, campaign);
-      if (template.body_html || template.subject) {
-        writeTemplate(template);
-        templateCount++;
-      }
+    for (const stub of emailActions) {
+      const action = await fetchActionDetail(campaign.id, stub.id);
+      const template = buildCampaignTemplate(action, campaign);
+      writeTemplate(template);
+      templateCount++;
     }
   }
 
@@ -140,8 +122,9 @@ async function main() {
   console.log(`Found ${newsletters.length} newsletters`);
 
   for (const newsletter of newsletters) {
-    const template = extractNewsletterTemplate(newsletter);
-    if (template.body_html || template.subject) {
+    const contents = await fetchNewsletterContents(newsletter.id);
+    for (const content of contents) {
+      const template = buildNewsletterTemplate(content, newsletter);
       writeTemplate(template);
       templateCount++;
     }
