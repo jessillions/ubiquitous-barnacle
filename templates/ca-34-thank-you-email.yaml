@@ -1,0 +1,8 @@
+id: 34
+campaign_id: 5
+type: campaign_action
+name: Thank you email
+subject: ""
+preheader: ""
+body_html: ""
+body_text: ""

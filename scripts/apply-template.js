@@ -36,8 +36,8 @@ async function updateCampaignAction(campaignId, actionId, payload) {
   return res.json();
 }
 
-async function updateNewsletter(newsletterId, payload) {
-  const url = `${BASE_URL}/newsletters/${newsletterId}`;
+async function updateNewsletterContent(newsletterId, contentId, payload) {
+  const url = `${BASE_URL}/newsletters/${newsletterId}/contents/${contentId}`;
   const res = await fetch(url, {
     method: "PUT",
     headers,
@@ -45,7 +45,7 @@ async function updateNewsletter(newsletterId, payload) {
   });
   if (!res.ok) {
     const text = await res.text();
-    throw new Error(`API ${res.status} updating newsletter ${newsletterId}: ${text}`);
+    throw new Error(`API ${res.status} updating newsletter ${newsletterId} content ${contentId}: ${text}`);
   }
   return res.json();
 }
@@ -86,7 +86,11 @@ async function main() {
     }
     await updateCampaignAction(template.campaign_id, template.id, payload);
   } else if (template.type === "newsletter") {
-    await updateNewsletter(template.id, payload);
+    if (!template.content_id) {
+      console.error("Newsletter templates require a content_id field");
+      process.exit(1);
+    }
+    await updateNewsletterContent(template.id, template.content_id, payload);
   } else {
     console.error(`Unknown template type: ${template.type}`);
     process.exit(1);
