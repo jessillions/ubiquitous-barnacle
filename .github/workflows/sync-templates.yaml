@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "templates/**"
+      - "templates/ca-*"
 
 jobs:
   sync:
@@ -24,7 +24,7 @@ jobs:
       - name: Detect changed templates
         id: changes
         run: |
-          FILES=$(git diff --name-only --diff-filter=ACM HEAD~1 HEAD -- 'templates/*.yaml')
+          FILES=$(git diff --name-only --diff-filter=ACM HEAD~1 HEAD -- 'templates/ca-*.yaml')
           echo "files<<EOF" >> "$GITHUB_OUTPUT"
           echo "$FILES" >> "$GITHUB_OUTPUT"
           echo "EOF" >> "$GITHUB_OUTPUT"
@@ -34,9 +34,16 @@ jobs:
         env:
           CUSTOMERIO_APP_API_KEY: ${{ secrets.CUSTOMERIO_APP_API_KEY }}
         run: |
+          failed=0
           while IFS= read -r file; do
             if [ -n "$file" ]; then
               echo "Applying $file..."
-              node scripts/apply-template.js "$file"
+              if ! node scripts/apply-template.js "$file"; then
+                echo "⚠️  Failed to apply $file — skipping"
+                failed=$((failed + 1))
+              fi
             fi
           done <<< "${{ steps.changes.outputs.files }}"
+          if [ "$failed" -gt 0 ]; then
+            echo "::warning::$failed template(s) failed to sync — check logs above"
+          fi
