@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "templates/ca-*"
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -24,7 +25,11 @@ jobs:
       - name: Detect changed templates
         id: changes
         run: |
-          FILES=$(git diff --name-only --diff-filter=ACM HEAD~1 HEAD -- 'templates/ca-*.yaml')
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            FILES=$(ls templates/ca-*.yaml 2>/dev/null)
+          else
+            FILES=$(git diff --name-only --diff-filter=ACM HEAD~1 HEAD -- 'templates/ca-*.yaml')
+          fi
           echo "files<<EOF" >> "$GITHUB_OUTPUT"
           echo "$FILES" >> "$GITHUB_OUTPUT"
           echo "EOF" >> "$GITHUB_OUTPUT"
